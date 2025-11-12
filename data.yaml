@@ -1,0 +1,20 @@
+# Accident Detection Dataset Configuration
+# Update paths according to your local dataset structure
+
+train: data/train/images
+val: data/valid/images  
+test: data/test/images
+
+# Number of classes
+nc: 1
+
+# Class names
+names: ['Accident']
+
+# Optional: Roboflow configuration (if using Roboflow dataset)
+roboflow:
+  workspace: project
+  project: accident-detection-model
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/project/accident-detection-model/dataset/1
